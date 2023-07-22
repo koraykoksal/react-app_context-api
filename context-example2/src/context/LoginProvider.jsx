@@ -1,3 +1,4 @@
+import { useContext } from "react"
 import { createContext } from "react"
 
 //! Login Context'i olusuturuldu
@@ -20,4 +21,8 @@ export const LoginProvider = ({children}) => {
         {children}
     </LoginContext>
   )
+}
+
+export const useLoginContext=()=>{
+    return useContext(LoginContext)
 }
