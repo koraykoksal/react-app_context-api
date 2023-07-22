@@ -10,6 +10,8 @@ function Navs() {
 
   const {user,setUser} = useContext(LoginContext);
 
+  console.log("navsss",user)
+
   return (
     <Navbar expand="md">
       <Container>
@@ -35,7 +37,8 @@ function Navs() {
               People
             </Link>
 
-            {user.email && user.passwrod ? (
+            {/* user State den gelen bilgilerin doğruluğu kontrol edilir. */}
+            {user.email && user.password ? (
               <Link 
                 className="nav-link" 
                 to="/login" 
