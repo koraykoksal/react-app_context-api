@@ -16,7 +16,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    navigate("/") //home sayfasına yönlendir
+    navigate(-1) //bir önceki sayfasına yönlendir
 
   };
 

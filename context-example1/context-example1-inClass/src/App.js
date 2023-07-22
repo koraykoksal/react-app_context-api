@@ -15,7 +15,7 @@ function App() {
 
   //local state
   const [user, setUser] = useState({ email: "", password: "" });
-
+ 
 
   return (
 
@@ -33,8 +33,8 @@ function App() {
 
         
         <Route path="people" element={<PrivateRoute/>}>
-        <Route path="people" element={<People />} />
-        <Route path="people/:id" element={<PersonDetail />} />
+        <Route path="" element={<People />} />
+        <Route path=":id" element={<PersonDetail />} />
         </Route>
         
 
